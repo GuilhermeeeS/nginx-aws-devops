@@ -1,4 +1,8 @@
-# Projeto DevOps: NGINX + Docker + Terraform + AWS
+# Nginx Devops Deploy
+
+<img align="center" alt="Docker" src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/>
+<img align="center" alt="Terraform" src="https://img.shields.io/badge/Terraform-844FBA.svg?style=for-the-badge&logo=Terraform&logoColor=white"/>
+<img align="center" alt="AWS" src="https://img.shields.io/badge/Amazon_Web_Services-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white"/>
 
 Projeto completo de DevOps demonstrando deploy automatizado de uma aplicação web com NGINX usando Docker, Terraform e AWS (Free Tier).
 
@@ -156,7 +160,7 @@ Este projeto foi projetado para rodar no Free Tier da AWS:
 - **EIP:** Grátis quando associado a uma instância em execução
 - **Transferência de dados:** 100GB grátis/mês
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Erro: "No valid credential sources found"
 Execute `aws configure` e configure suas credenciais.
@@ -169,18 +173,3 @@ Aguarde 2-3 minutos para a instância inicializar. Verifique os logs:
 ```bash
 ssh -i ~/.ssh/id_rsa ec2-user@<IP> "docker logs nginx-app"
 ```
-
-### Porta 22 bloqueada
-Verifique o Security Group no console AWS e certifique-se que a porta 22 está aberta para seu IP.
-
-## 📚 Referências
-
-- [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-- [Docker NGINX](https://hub.docker.com/_/nginx)
-- [AWS Free Tier](https://aws.amazon.com/free/)
-
-## Licença
-
-Este projeto é livre para uso educacional.
-
----
