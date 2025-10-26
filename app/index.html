@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Portfolio | AWS + Docker + Terraform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s ease, background 0.3s ease;
+            animation: fadeIn 1s ease;
+        }
+
+        .tech-badge:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .info-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        .info-section h2 {
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .info-section p {
+            line-height: 1.8;
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+
+        .status {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(76, 175, 80, 0.3);
+            border-radius: 10px;
+            animation: pulse 2s infinite;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #4CAF50;
+            border-radius: 50%;
+            margin-right: 10px;
+            animation: blink 1.5s infinite;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02);
+            }
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 DevOps Project</h1>
+        <p class="subtitle">Infraestrutura como Código na AWS</p>
+
+        <div class="tech-stack">
+            <div class="tech-badge">🐳 Docker</div>
+            <div class="tech-badge">🏗️ Terraform</div>
+            <div class="tech-badge">☁️ AWS EC2</div>
+            <div class="tech-badge">🌐 NGINX</div>
+        </div>
+
+        <div class="info-section">
+            <h2>📦 Sobre o Projeto</h2>
+            <p>
+                Este projeto demonstra um pipeline completo de DevOps, utilizando Docker para containerização,
+                Terraform para provisionamento de infraestrutura na AWS, e NGINX como web server.
+                Toda a infraestrutura está configurada para rodar no Free Tier da AWS.
+            </p>
+        </div>
+
+        <div class="info-section">
+            <h2>⚙️ Arquitetura</h2>
+            <p>
+                <strong>• Container:</strong> Aplicação rodando em Docker com NGINX Alpine<br>
+                <strong>• Compute:</strong> EC2 t2.micro (Free Tier)<br>
+                <strong>• Rede:</strong> VPC com Security Groups configurados<br>
+                <strong>• IaC:</strong> Infraestrutura gerenciada com Terraform
+            </p>
+        </div>
+
+        <div class="status">
+            <span class="status-indicator"></span>
+            <strong>Sistema Online e Operacional</strong>
+        </div>
+    </div>
+</body>
+</html>
